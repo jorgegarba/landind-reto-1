@@ -15,6 +15,10 @@
 
 body {
   font-family: var(--vietnam);
+  background-image: url("./../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% + 100px);
+  background-position-y: -200px;
 }
 
 .btn__started {
@@ -92,6 +96,7 @@ main section {
 .seccion1 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .seccion1 > * {
   margin-bottom: 40px;
@@ -104,6 +109,67 @@ main section {
 .seccion1__parrafo {
   color: var(--color-azul-claro);
   width: 50%;
+}
+.seccion2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.seccion2 img {
+  width: 100%;
+  max-width: 550px;
+}
+
+.seccion3 {
+  margin-top: 80px;
+}
+
+.seccion3 > * {
+  margin-bottom: 40px;
+}
+
+.seccion3__titulo {
+  color: var(--color-azul-oscuro);
+  font-size: 3rem;
+  line-height: 3.2rem;
+}
+.seccion3__parrafo {
+  color: var(--color-azul-claro);
+  width: 50%;
+}
+
+.seccion4 {
+  margin-top: 80px;
+}
+
+.seccion4__media {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.seccion4__numero {
+  color: white;
+  background-color: var(--color-naranja);
+  height: 45px;
+  width: 80px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+}
+.seccion4__texto {
+  flex: 1;
+  padding: 8px 160px 8px 20px;
+}
+
+.seccion4__titulo {
+  color: var(--color-azul-oscuro);
+  margin-bottom: 20px;
+}
+.seccion4__parrafo {
+  color: var(--color-azul-claro);
+  line-height: 1.6rem;
 }
 
 /* ----- MAIN -----*/
