@@ -11,6 +11,7 @@
   --color-azul-oscuro: hsl(228, 39%, 23%);
   --plomo-claro: hsl(0, 0%, 98%);
   --color-azul-claro: hsl(227, 12%, 61%);
+  --color-rosado: hsl(13, 100%, 96%);
 }
 
 body {
@@ -82,13 +83,14 @@ body {
 /* ----- HEADER ----- */
 
 /* ----- MAIN -----*/
-main {
+
+.principal {
   max-width: var(--ancho);
   display: flex;
   margin: 100px auto 0 auto;
   flex-wrap: wrap;
 }
-main section {
+.principal section {
   width: 50%;
   border: 1px solid black;
 }
@@ -172,4 +174,97 @@ main section {
   line-height: 1.6rem;
 }
 
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.testimonios__titulo {
+  color: var(--color-azul-oscuro);
+  font-size: 3rem;
+}
+
+.cards {
+  display: flex;
+  margin-top: 130px;
+}
+.card {
+  background-color: var(--plomo-claro);
+  flex: 1;
+  margin: 0 10px;
+  padding: 0 40px 40px 40px;
+  text-align: center;
+}
+.card__imagen {
+  width: 100px;
+  height: 100px;
+  transform: translate(0, -50%);
+}
+.card__titulo {
+  color: var(--color-azul-oscuro);
+  margin-bottom: 20px;
+}
+.card__parrafo {
+  color: var(--color-azul-claro);
+  line-height: 1.5rem;
+}
+
 /* ----- MAIN -----*/
+
+@media screen and (max-width: 1440px) {
+  .principal {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .seccion1__parrafo,
+  .seccion3__parrafo {
+    width: 80%;
+  }
+  .seccion4__texto {
+    padding: 8px 40px 8px 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .principal {
+    flex-direction: column;
+  }
+  .principal section {
+    width: 100%;
+  }
+  .seccion1 {
+    order: 2;
+    text-align: center;
+  }
+
+  .seccion1 .btn__started {
+    margin: 0 auto;
+  }
+  .btn__started-left {
+    justify-content: center;
+  }
+  .seccion1__parrafo {
+    width: 100%;
+  }
+
+  .seccion2 {
+    order: 1;
+  }
+  .seccion3 {
+    order: 3;
+    text-align: center;
+  }
+  .seccion3__parrafo {
+    width: 100%;
+  }
+  .seccion4 {
+    order: 4;
+  }
+  .seccion4__titulo {
+    background-color: var(--color-rosado);
+  }
+}
