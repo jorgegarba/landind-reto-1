@@ -92,7 +92,6 @@ body {
 }
 .principal section {
   width: 50%;
-  border: 1px solid black;
 }
 
 .seccion1 {
@@ -263,8 +262,26 @@ body {
   }
   .seccion4 {
     order: 4;
+    margin-top: 20px;
   }
   .seccion4__titulo {
     background-color: var(--color-rosado);
+    height: 45px;
+    padding-left: 80px;
+    padding-top: 6px;
+  }
+  .seccion4__media {
+    position: relative;
+  }
+  .seccion4__numero {
+    position: absolute;
+    top: 8px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width:720px){
+  .principal{
+    padding: 0 20px;
   }
 }
